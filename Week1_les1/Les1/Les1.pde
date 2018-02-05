@@ -24,6 +24,7 @@
 //}
 
 
+
 //// opgave globaal delen
 
 //int getal1, getal2;
@@ -46,7 +47,84 @@
 // de methode een returnwaarde geven
 
 
+
 //// Opgaven Delen door nul
+
 // a haakje mist
 // b float =/ int
 // c delen door nul mag niet
+
+
+
+//// Opgave zoeken in een array
+
+//int[] lijst = {2,3,5,6,9};
+
+//void setup(){
+// println(komtGetalVoorIn(3,lijst));
+//}
+
+//boolean komtGetalVoorIn (int getal, int[] lijst){
+//  for(int i=0; i< lijst.length; i++){
+//    if (getal == lijst[i]){
+//      return true;
+//    }
+//  }
+//  return false;
+//}
+
+
+
+//// opgave doeFunctie?
+
+//int[][] hetVeld = {
+//                    {1, 6, 3},
+//                    {3, 2, 9},
+//                  };
+
+//void setup() {
+//  println(doeFunctie(hetVeld, 2));
+//}
+
+//int doeFunctie(int[][] a, int b) {
+//  int c = 0;
+//  int[] d = a[b];
+//  for (int i = 0; i < d.length; i++) {
+//    c += d[i];  
+//  }  
+//  return c;
+//}
+
+// onderdeel B
+// foutmelding array index out of bounds 
+// de tweedimensionale array heeft maar 2 indexen
+
+// onderdeel c
+// variabelen a,b,c en d zijn variabelen die alleenmaar 
+// beschikbaar zijn binnen de functie doeFunctie. HetVeld
+// is een globale variabele
+
+
+
+//// opgave doeKeerTwee
+
+int testGetal = 5;
+int[] testGetallen = {5, 5};
+
+void setup() {
+  doeKeerTwee(testGetal);
+  doeKeerTwee(testGetallen);
+  
+  println(testGetal);
+  println(testGetallen);
+}
+
+void doeKeerTwee(int getal) {
+  getal = 2 * getal;
+}
+
+void doeKeerTwee(int[] getallen) {
+  for (int i = 0; i < getallen.length; i++) {
+    getallen[i] = 2 * getallen[i];
+  }
+}
