@@ -108,23 +108,32 @@
 
 //// opgave doeKeerTwee
 
-int testGetal = 5;
-int[] testGetallen = {5, 5};
+//int testGetal = 5;
+//int[] testGetallen = {5, 5};
 
-void setup() {
-  doeKeerTwee(testGetal);
-  doeKeerTwee(testGetallen);
+//void setup() {
+//  doeKeerTwee(testGetal);
+//  doeKeerTwee(testGetallen);
   
-  println(testGetal);
-  println(testGetallen);
-}
+//  println(testGetal);
+//  println(testGetallen);
+//}
 
-void doeKeerTwee(int getal) {
-  getal = 2 * getal;
-}
+//void doeKeerTwee(int getal) {
+//  getal = 2 * getal;
+//}
 
-void doeKeerTwee(int[] getallen) {
-  for (int i = 0; i < getallen.length; i++) {
-    getallen[i] = 2 * getallen[i];
-  }
-}
+//void doeKeerTwee(int[] getallen) {
+//  for (int i = 0; i < getallen.length; i++) {
+//    getallen[i] = 2 * getallen[i];
+//  }
+//}
+
+
+//// opgave arrays bouwen
+
+//// opgave a
+
+
+
+//// opgave b
