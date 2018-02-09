@@ -1,6 +1,6 @@
 //// opgave delen
 //// onderdeel A optie 1
-//println(5.0/2.0);
+// println(5.0/2.0);
 
 //// onderdeel A optie 2
 

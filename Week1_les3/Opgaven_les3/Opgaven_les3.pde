@@ -34,7 +34,7 @@ void draw(){
 
 //// Opgave Persoonsverandering
 /// Onderdeel A
-
+/*
 class Persoon {
   String naam;
   
@@ -53,3 +53,50 @@ void setup() {
   
   println(p1.naam);
 }
+*/
+
+//// Les 2 Opgave Samenvatting geheugenmodel
+/*
+int[] deLijst;
+int hetGetal;
+
+void setup() {
+  hetGetal = 10;
+  deLijst = maakLijstMetEenGetal(2, hetGetal);
+} 
+
+int[] maakLijstMetEenGetal(int lengte, int getal) {
+  int[] lijst = new int[lengte];
+  for (int i = 0; i < lijst.length; i++) {
+    lijst[i] = getal; 
+  }  
+  println(lijst);
+  return lijst;
+}
+*/
+
+//// Reflectieopgaven
+/*
+/// Opgave testen
+  plek: in de draw()
+  schets: println( een bewering die klopt gelijkstellen aan true en een 
+  foutieve bewering gelijkstellen aan true) dan moet er true en false uitkomen
+
+/// Opgave Foutmeldingen
+  runtime errors en compile-time errors
+  oorzaak:
+    runtime errors: 
+    compile-time errors:
+  oplossing: 
+    runtime errors: 
+    compile-time errors:
+    
+/// Opgave Programmeerstijl
+   geen magic numbers
+
+/// Opgave begrippen verbinden
+?
+
+/// Opgave Opgaven en tags
+// Onderdeel A
+// Onderdeel B
