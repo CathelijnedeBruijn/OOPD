@@ -23,11 +23,8 @@ void setup(){
 
 //// Opgave Damsteen deel 1
 /// Opgave A
-/*class Damsteen{
-  int kleur;
-  int diameter;
-  int xPunt;
-  int yPunt;
+class Damsteen{
+  int kleur,diameter, xPunt, yPunt;
   
   Damsteen(int damsteenKleur,int damsteenDiameter,int damsteenX,int damsteenY){
   this.kleur = damsteenKleur;
@@ -51,6 +48,6 @@ void setup(){
    ellipse(stenen[i].xPunt,stenen[i].yPunt,stenen[i].diameter,stenen[i].diameter);
   }
 }
-*/
+
 
 //// Opgave Student null
