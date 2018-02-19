@@ -1,30 +1,44 @@
 class Slider{
-  float X, Y, Breedte, Hoogte;
+  float X, Y, Breedte, Hoogte, positie;
   int NPosities;
 
   Slider(){
-    Breedte = 200;
-    Hoogte = 50;
-    X = (width - Breedte) / 2;
-    Y = 50;
-    NPosities = 5;
+    this.Breedte = 200;
+    this.Hoogte = 50;
+    this.X = (width - Breedte) / 2;
+    this.Y = 50;
+    this.NPosities = 5;
+    this.positie = 0;
   }
   
   Slider(float X, float Y, float Breedte, float Hoogte, int NPosities){
-  this.X=X;
-  this.Y=Y;
-  this.Breedte=Breedte;
-  this.Hoogte=Hoogte;
-  this.NPosities=NPosities;
+    this.X=X;
+    this.Y=Y;
+    this.Breedte=Breedte;
+    this.Hoogte=Hoogte;
+    this.NPosities=NPosities;
   }
 
-  void tekenSlider(float x, float y, float breedte, float hoogte, int positie, int nPosities) {
-  float blokjeBreedte = breedte / nPosities;
-  noStroke();
-  fill(255);
-  rect(x, y, breedte, hoogte);
-  fill(#2257F0);
-  rect(x + positie * blokjeBreedte, y, blokjeBreedte, hoogte);  
-}
+  void tekenSlider() {
+    float blokjeBreedte = this.Breedte / this.NPosities;
+    noStroke();
+    
+    fill(255);
+    rect(this.X, this.Y, this.Breedte, this.Hoogte);
+    
+    fill(#2257F0);
+    rect(X + this.positie * blokjeBreedte, Y, blokjeBreedte, Hoogte);  
+  }
 
+  void bepaalSliderPositie() {
+    float blokjeBreedte = this.Breedte / this.NPosities;
+    
+    if (mouseX < this.X) {
+     this.positie =  0;
+    } else if (mouseX >= this.Breedte + this.X) {
+      this.positie= this.NPosities - 1;
+    } else {
+      this.positie= floor((mouseX  - this.X) / blokjeBreedte);
+    } 
+  }
 }

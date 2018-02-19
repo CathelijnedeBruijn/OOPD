@@ -1,36 +1,26 @@
 //// Opgave Slider deel 2
 
-float X, Y, Breedte, Hoogte;
-int NPosities;
+float Y= 50; 
+float Breedte= 200; 
+float Hoogte= 50;
+int NPosities= 5;
+float X=(width - Breedte) / 2;
+
+Slider Slider1 = new Slider(X,Y,Breedte,Hoogte, NPosities);
 
 void setup() {
   size(300, 200);
   background(0);
-  
-  Breedte = 200;
-  Hoogte = 50;
-  X = (width - Breedte) / 2;
-  Y = 50;
-  NPosities = 5;
+ 
 }
 
 void draw() {
-  int HuidigePositie = bepaalSliderPositie(X, Breedte, NPosities);
-  Slider.tekenSlider(X, Y, Breedte, Hoogte, HuidigePositie, NPosities);  
+  Slider1.bepaalSliderPositie();
+  Slider1.tekenSlider();  
 }
 
 
 
-int bepaalSliderPositie(float x, float breedte, int nPosities) {
-  float blokjeBreedte = breedte / nPosities;
-  if (mouseX < x) {
-   return 0;
-  } else if (mouseX >= breedte + x) {
-    return nPosities - 1;
-  } else {
-    return floor((mouseX  - x) / blokjeBreedte);
-  } 
-}
 
 
 //// Opgave toString()
