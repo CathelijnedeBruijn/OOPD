@@ -13,5 +13,4 @@ void setup() {
 deSchool wordt nu niet gekoppeld aan de studenten
 
 //// onderdeel C
-ja ik denk het wel
 */
