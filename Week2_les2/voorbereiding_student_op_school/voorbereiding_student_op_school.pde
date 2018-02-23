@@ -10,7 +10,10 @@ void setup() {
 /*
 
 ////onderdeel B
-deSchool wordt nu niet gekoppeld aan de studenten
+deSchool wordt nu niet gekoppeld aan de studenten en er 
+ontstaan nog twee objecten van school met de naam ica.
 
 //// onderdeel C
+nee het hele object moet worden meegegeven
+
 */
