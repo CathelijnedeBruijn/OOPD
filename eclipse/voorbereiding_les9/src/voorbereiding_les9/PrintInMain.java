@@ -31,7 +31,7 @@ public class PrintInMain {
 }
 */
 /*
-// Optie 2 ???
+// Optie 2 //// instantie aanmaken
 
 package voorbereiding_les9;
 
@@ -45,5 +45,7 @@ public class PrintInMain {
 		System.out.println(tekst);
 	}
 }
+
+
 */
 

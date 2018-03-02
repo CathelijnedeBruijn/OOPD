@@ -21,7 +21,7 @@ public class Student {
 		return geslacht;
 	}
 	
-	public void setGeslacht(String geslacht) {
+	public void setGeslacht(Geslacht geslacht) {
 		this.geslacht = geslacht;
 	}
 	
@@ -50,3 +50,8 @@ public class Student {
 	}
 }
 
+
+public enum Geslacht{
+	MAN,VROUW;	
+}
+}
