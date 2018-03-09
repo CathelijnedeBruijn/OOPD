@@ -1,0 +1,11 @@
+# Opgave Personenlijst implementatie
+
+opgave A
+
+string:
+- Op deze manier wordt alleen de naam beschreven, ook van de SLBers die wel docent/persoon zijn.
++ ?
+
+Persoon:
++ Dan is de SLBer wel een persoon met voor- en achternaam.
+- ?
