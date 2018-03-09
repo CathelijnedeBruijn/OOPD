@@ -7,7 +7,7 @@ public abstract class Switch extends Knop {
 	
 	public Switch(PApplet app, float x, float y, float breedte, float hoogte) {
 		super(app, x, y, breedte, hoogte);
-		isAan = false;
+		isAan = true;
 	}
 
 	@Override

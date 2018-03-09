@@ -16,4 +16,11 @@ public class LichtSwitch extends Switch {
 		licht.schakelLicht();
 	}
 
+	protected void veranderKnopStatus() {
+		if (licht.isAan()) {
+			setAan(true);
+		} else {
+			setAan(false);
+		}
+	}
 }
