@@ -1,0 +1,10 @@
+# Opgave het woord interface
+
+1. Een interface kan een soort klasse zijn, waarin alleen abstracte methoden staan.
+2. API
+3. Omgeving waar gebruiker in werkt
+
+# Opgave meerdere interfaces implementeren
+Bij multiple inheritance erft de klasse de eigenschappen en variabelen van verschillende superklassen, deze 
+kunnen tegenstrijdig zijn met elkaar. Bij meerdere interfaces kan een klasse van verschillende klassen 
+functies overnemen.
