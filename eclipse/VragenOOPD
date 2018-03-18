@@ -1,0 +1,12 @@
+#Vragen over de OOPD-toetsstof
+
+1. Is het misschien mogelijk om de geheugenmodellen te herhalen? In de oefentoets moet er een geheugenmodel worden getekend 
+van objecten/klassen met een superklasse. Moet deze superklasse niet worden weergegeven? 
+
+2. Wat is het verschil tussen een subklasse en een subtype en wanneer wordt een subklasse een subtype? Dezelfde vraag voor 
+superklasse en supertype. En wat heeft subtypering te maken met polymorfisme? De uitleg in het boek begreep ik niet goed.
+
+3. Moeten we ook alle informatie kennen uit het boek par. 12.7 en 12.8 (blz 465- 468)? Deze bespreken oa het gebruik van
+de klasse Class.
+
+4. Wat krijgt de voorkeur, een interface of een (abstracte) superklasse gebruiken?
