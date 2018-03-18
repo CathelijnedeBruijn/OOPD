@@ -8,12 +8,16 @@ public class Radioknop extends Switch implements IDoelwit{
 	
 	@Override
 	public void schakel() {
-			
+		for(IDoelwit dw:doelwitten) {
+			Radioknop rk=(Radioknop)dw;
+			rk.isAan = false;
+		}
+		this.isAan = true;
 	}
 	
 	@Override
 	public void handelInteractieAf() {
-		
+		schakel();
 	}
 	
 	@Override
@@ -37,5 +41,8 @@ public class Radioknop extends Switch implements IDoelwit{
 			return false;
 		}
 	}
+
+	
+	
 
 }

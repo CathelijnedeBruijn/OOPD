@@ -5,8 +5,8 @@ public abstract class Knop {
 	
 	protected PApplet app;
 	protected float x, y, breedte, hoogte;
-	protected ArrayList<IDoelwit> doelwitten= new ArrayList<IDoelwit>(); 
-	
+	protected ArrayList<IDoelwit> doelwitten= new ArrayList<>(); 
+
 	public Knop(PApplet app, float x, float y, float breedte, float hoogte) {
 		this.app = app;
 		this.x = x;
@@ -25,6 +25,9 @@ public abstract class Knop {
 		}
 	}
 
+	
+	
+	
 	public abstract void tekenKnop();
 	
 	public void handelInteractieAf() {
@@ -34,6 +37,9 @@ public abstract class Knop {
 	public void doeKnopActie() {	
 		
 	}
-	
+	public void voegDoelWitToe(IDoelwit doelwit) {
+		doelwitten.add(doelwit);
+		
+	}
 	
 }
