@@ -1,11 +1,14 @@
 import java.util.ArrayList;
+
 import processing.core.PApplet;
 
 public abstract class Knop {
 	
 	protected PApplet app;
+
 	protected float x, y, breedte, hoogte;
-	protected ArrayList<IDoelwit> doelwitten= new ArrayList<>(); 
+	
+	protected ArrayList<IDoelwit> doelwitten = new ArrayList<>();
 
 	public Knop(PApplet app, float x, float y, float breedte, float hoogte) {
 		this.app = app;
@@ -25,21 +28,14 @@ public abstract class Knop {
 		}
 	}
 
-	
-	
-	
 	public abstract void tekenKnop();
+	public abstract void doeKnopActie();
 	
 	public void handelInteractieAf() {
 		doeKnopActie();
 	}
 
-	public void doeKnopActie() {	
-		
-	}
-	public void voegDoelWitToe(IDoelwit doelwit) {
+	public void voegDoelwitToe(IDoelwit doelwit) {
 		doelwitten.add(doelwit);
-		
 	}
-	
 }

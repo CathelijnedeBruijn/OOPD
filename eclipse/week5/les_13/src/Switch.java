@@ -9,23 +9,22 @@ public class Switch extends Knop {
 		isAan = false;
 	}
 	
-	public void zetAan() {
-		
-	}
-	
-	public void zetUit() {
-		
-	}
-	
 	@Override
 	public void handelInteractieAf() {
 		isAan = !isAan;		
 		doeKnopActie();
 	}
 	
+	public void zetAan() {
+		isAan = true;
+	}
+	
+	public void zetUit() {
+		isAan = false;
+	}
 	
 	
-	@Override
+	//@Override
 	public void tekenKnop() {
 		tekenBasis();
 		tekenSchuif();
@@ -73,5 +72,14 @@ public class Switch extends Knop {
 			app.rect(x, y, greepBreedte, hoogte);
 		}
 	}
-}
 
+	@Override
+	public void doeKnopActie() {
+		if (isAan) {
+			zetUit();
+		} else {
+			zetAan();
+		}
+		
+	}
+}
